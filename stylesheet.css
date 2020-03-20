@@ -1,0 +1,71 @@
+@font-face {
+  font-family: 'sg';
+  src: url('fonts/sgm.woff2') format('woff2'),
+       url('fonts/sgm.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'sg';
+  src: url('fonts/sgr.woff2') format('woff2'),
+       url('fonts/sgr.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background: #222831;
+  color: #9a9da2;
+  display: flex;
+  font-family: sg, sans-serif;
+  justify-content: center;
+}
+
+.content {
+  max-width: 90vw;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+p {
+  font-size: 36px;
+}
+
+br {
+  display: none;
+}
+
+a {
+  color: #c2eaba;
+  text-decoration: none;
+  transition: color 0.3s ease-in
+}
+
+a:hover {
+  color: #c5f4e0;
+}
+
+@media only screen and (min-width: 960px) {
+  br {
+    display: block;
+  }
+
+  .content {
+    max-width: 960px;
+  }
+
+  h1 {
+    font-size: 48px;
+  }
+  
+  p {
+    font-size: 48px;
+  }
+
+  a {
+    color: #9a9da2;
+  }
+}
